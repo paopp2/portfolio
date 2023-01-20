@@ -47,7 +47,7 @@
 				{#each navBarLinks as navLink}
 					<li>
 						<a
-							href="/"
+							href="#trial"
 							class="{getNavBarLinkClass(navLink)}"
 							on:click={() => (currentNavLink = navLink)}
 							aria-current="page">{navLink}</a

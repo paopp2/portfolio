@@ -7,7 +7,7 @@
 				alt="Flowbite Logo"
 			/>
 			<span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
-				>Flowbite</span
+				>Paolo Pepito</span
 			>
 		</a>
 		<button
@@ -38,7 +38,7 @@
 				<li>
 					<a
 						href="#"
-						class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+						class="block py-2 pl-3 pr-4 text-white bg-[#7de1c5] rounded md:bg-transparent md:text-[#7de1c5] md:p-0 dark:text-white"
 						aria-current="page">Home</a
 					>
 				</li>

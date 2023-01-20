@@ -5,7 +5,7 @@
 
 <div>
   <AppBar/>
-  <main class="absolute top-0">
+  <main class="absolute top-0 -z-10">
     <HeroSection/>
     <HeroSection/>
     <HeroSection/>

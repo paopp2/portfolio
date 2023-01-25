@@ -5,7 +5,7 @@
 		<h2 class="text-6xl text-[#8a92af] pb-8">I build mobile, web & desktop apps</h2>
 		<p class="w-7/12 text-[#737c97] pb-10">
 			I am a full-stack software engineer with the passion and skills for creating beautiful and seamless
-			user experiences may it be for the web, mobile, or desktop platforms.
+			user experiences may it be for mobile, web or desktop.
 			Hit me up and let's build something great together!
 		</p>
 		<button

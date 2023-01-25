@@ -1,5 +1,5 @@
 <script lang="ts">
-	let navBarLinks: string[] = [ 'Home', 'About', 'Skills', 'Work', 'Contact' ];
+	let navBarLinks: string[] = [ 'Home', 'Portfolio', 'About', 'Contact' ];
 	let currentNavLink = navBarLinks[0];
 	
 	$: getNavBarLinkClass = (navLink: string) => {

@@ -1,16 +1,14 @@
 <script>
 	import AppBar from "./AppBar.svelte";
 	import HeroSection from "./HeroSection.svelte";
+	import PortfolioSection from "./PortfolioSection.svelte";
 </script>
 
 <div>
   <AppBar/>
   <main class="absolute top-0 -z-10">
     <HeroSection/>
-    <HeroSection/>
-    <div id="trial">
-      <HeroSection/>
-    </div>
+    <PortfolioSection/>
   </main>
 </div>
 

@@ -1,17 +1,66 @@
-<div class="px-64 text-white font-bold flex items-center h-screen">
-	<div>
-		<p class="text-[#7de1c5] pb-3">Hi, my name is</p>
-		<h1 class="text-8xl text-[#ced6f5] pb-3">Paolo Pepito.</h1>
-		<h2 class="text-6xl text-[#8a92af] pb-8">I build mobile, web & desktop apps</h2>
-		<p class="w-7/12 text-[#737c97] pb-10">
-			I am a full-stack software engineer with the passion and skills for creating beautiful and seamless
-			user experiences may it be for mobile, web or desktop.
-			Hit me up and let's build something great together!
-		</p>
-		<button
-			type="button"
-			class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-extrabold rounded-lg text-lg px-10 py-3 text-center mr-2 mb-2"
-			>Contact Me</button
-		>
+<script lang="ts">
+	import { onMount } from 'svelte';
+	import { tweened } from 'svelte/motion';
+	import { cubicOut } from 'svelte/easing';
+
+	onMount(async () => {
+		[padding0, padding1, padding2, padding3].forEach((p) => p.set(20));
+		[alpha0, alpha1, alpha2, alpha3].forEach((a) => a.set(1.0));
+	});
+
+	const padding0 = tweened(0, getAnimationConfig());
+	const alpha0 = tweened(0.0, getAnimationConfig());
+
+	const padding1 = tweened(0, getAnimationConfig(1));
+	const alpha1 = tweened(0, getAnimationConfig(1));
+
+	const padding2 = tweened(0, getAnimationConfig(2));
+	const alpha2 = tweened(0, getAnimationConfig(2));
+
+	const padding3 = tweened(0, getAnimationConfig(3, 1500));
+	const alpha3 = tweened(0, getAnimationConfig(3));
+
+	function getAnimationConfig(order = 0, duration: number = 1000) {
+		const staggerDelayMs = 90;
+		return {
+			duration: duration,
+			easing: cubicOut,
+			delay: staggerDelayMs * order
+		};
+	}
+</script>
+
+<section>
+	<div
+		class="flex h-screen items-center pl-[290px] pr-[310px] font-bold text-white">
+		<div>
+			<div style="padding-left: {$padding0}px; opacity: {$alpha0}">
+				<h1 class="text-[110px] text-[#ced6f5]">Paolo Pepito</h1>
+			</div>
+			<div style="padding-left: {$padding1}px; opacity: {$alpha1}">
+				<h2 class="pb-8 text-[50px] font-normal text-[#8a92af]">
+					I build mobile, web and desktop apps
+				</h2>
+			</div>
+			<div style="padding-left: {$padding2}px; opacity: {$alpha2}">
+				<p class="pb-14 text-[18.5px] font-normal text-[#737c97]">
+					I am a full-stack software engineer with the passion and skills for
+					creating beautiful and seamless user experiences may it be for mobile,
+					web or desktop. Hit me up and let's build something great together!
+				</p>
+			</div>
+			<div style="padding-left: {$padding3}px; opacity: {$alpha3}">
+				<button
+					type="button"
+					class="mr-2 mb-2 h-[4.5rem] rounded-2xl bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 px-10 py-3 text-center text-lg font-extrabold text-white hover:bg-gradient-to-br focus:outline-none"
+					>Some of my work</button>
+			</div>
+		</div>
 	</div>
-</div>
+</section>
+
+<style>
+	section {
+		background-color: #0b1426;
+	}
+</style>

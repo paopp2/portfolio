@@ -3,13 +3,13 @@
 	import { tweened } from 'svelte/motion';
 	import { cubicOut } from 'svelte/easing';
 	import lottie from 'lottie-web';
-	import animationData from './arrow-down-lottie.json';
+	import arrowDownLottieData from '$lib/assets/arrow-down-lottie.json';
 
 	let arrowDownLottieContainer: HTMLElement;
 	onMount(async () => {
 		lottie.loadAnimation({
 			container: arrowDownLottieContainer,
-			animationData
+			animationData: arrowDownLottieData
 		});
 
 		[padding0, padding1, padding2, padding3].forEach((p) => p.set(20));

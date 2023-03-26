@@ -2,8 +2,16 @@
 	import { onMount } from 'svelte';
 	import { tweened } from 'svelte/motion';
 	import { cubicOut } from 'svelte/easing';
+	import lottie from 'lottie-web';
+	import animationData from './arrow-down-lottie.json';
 
+	let arrowDownLottieContainer: HTMLElement;
 	onMount(async () => {
+		lottie.loadAnimation({
+			container: arrowDownLottieContainer,
+			animationData
+		});
+
 		[padding0, padding1, padding2, padding3].forEach((p) => p.set(20));
 		[alpha0, alpha1, alpha2, alpha3].forEach((a) => a.set(1.0));
 	});
@@ -45,15 +53,19 @@
 			<div style="padding-left: {$padding2}px; opacity: {$alpha2}">
 				<p class="pb-14 text-[18.5px] font-normal text-[#737c97]">
 					I am a full-stack software engineer with the passion and skills for
-					creating beautiful and seamless user experiences may it be for mobile,
-					web or desktop. Hit me up and let's build something great together!
+					creating beautiful and seamless user <br />
+					experiences may it be for mobile, web or desktop. Hit me up and let's build
+					something great together!
 				</p>
 			</div>
 			<div style="padding-left: {$padding3}px; opacity: {$alpha3}">
 				<button
 					type="button"
-					class="mr-2 mb-2 h-[4.5rem] rounded-2xl bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 px-10 py-3 text-center text-lg font-extrabold text-white hover:bg-gradient-to-br focus:outline-none"
-					>Some of my work</button>
+					class="mr-2 mb-2 h-[4.5rem] rounded-2xl bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 px-4 py-3 text-center hover:bg-gradient-to-br focus:outline-none flex items-center justify-center">
+					<span class="pl-4 text-xl font-extrabold text-white "
+						>Some of my works</span>
+					<div bind:this={arrowDownLottieContainer} class="h-14 w-14" />
+				</button>
 			</div>
 		</div>
 	</div>

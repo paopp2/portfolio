@@ -1,4 +1,4 @@
-<section>
+<section id="portfolio-section">
 	<div class="flex h-screen flex-col items-center justify-center">
 		<h1 class="text-5xl font-bold text-[color:var(--text-color)]">
 			Some of my works

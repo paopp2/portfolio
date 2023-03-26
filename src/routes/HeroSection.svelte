@@ -59,13 +59,15 @@
 				</p>
 			</div>
 			<div style="padding-left: {$padding3}px; opacity: {$alpha3}">
-				<button
-					type="button"
-					class="mr-2 mb-2 h-[4.5rem] rounded-2xl bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 px-4 py-3 text-center hover:bg-gradient-to-br focus:outline-none flex items-center justify-center">
-					<span class="pl-4 text-xl font-extrabold text-white "
-						>Some of my works</span>
-					<div bind:this={arrowDownLottieContainer} class="h-14 w-14" />
-				</button>
+				<a href="#portfolio-section">
+					<button
+						type="button"
+						class="mr-2 mb-2 h-[4.5rem] rounded-2xl bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 px-4 py-3 text-center hover:bg-gradient-to-br focus:outline-none flex items-center justify-center">
+						<span class="pl-4 text-xl font-extrabold text-white "
+							>Some of my works</span>
+						<div bind:this={arrowDownLottieContainer} class="h-14 w-14" />
+					</button>
+				</a>
 			</div>
 		</div>
 	</div>

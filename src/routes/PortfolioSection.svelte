@@ -1,15 +1,14 @@
-<div class="flex flex-col items-center justify-center h-screen">
-  <h1 class="text-5xl text-[#ced6f5] font-bold">Some of my works</h1>
-  <div class="flex flex-row items-center">
-	<div class="flex-1 flex-col text-center text-white">
-		<h1>Random text 1</h1>
-		<h1>Random text 2</h1>
+<section>
+	<div class="flex h-screen flex-col items-center justify-center">
+		<h1 class="text-5xl font-bold text-[color:var(--text-color)]">
+			Some of my works
+		</h1>
+		<p class="text-[color:var(--text-color)]">[Show your works here]</p>
 	</div>
-	<div class="flex-1 flex-col text-center">
-		<img 
-			class="w-1/2 mx-auto"
-			src="https://cdn.freebiesupply.com/logos/large/2x/random-logo-png-transparent.png" 
-			alt="some random logo">
-	</div>
-  </div>
-</div>
+</section>
+
+<style>
+	section {
+		--text-color: #ced6f5;
+	}
+</style>

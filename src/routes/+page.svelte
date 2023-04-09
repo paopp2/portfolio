@@ -1,7 +1,8 @@
 <script>
 	import HeroSection from './HeroSection.svelte';
 	import PortfolioSection from './PortfolioSection.svelte';
-	import AboutSection from './AboutSection.svelte';
+	// import AboutSection from './AboutSection.svelte';
+	// import ContactSection from './ContactSection.svelte';
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,12 +13,19 @@
 <div>
 	<HeroSection />
 	<PortfolioSection />
-	<AboutSection />
+	<!-- <div class="pt-32" /> -->
+	<!-- <AboutSection />
+	<div class="pt-32" />
+	<ContactSection /> -->
 </div>
 
 <style lang="postcss">
 	:global(html) {
 		scroll-behavior: smooth;
 		font-family: 'Roboto', sans-serif;
+		background-color: #0b1426;
+
+		/* Shared style variables */
+		--text-color: #ced6f5;
 	}
 </style>

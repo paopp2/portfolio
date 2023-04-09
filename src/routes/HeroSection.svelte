@@ -72,9 +72,3 @@
 		</div>
 	</div>
 </section>
-
-<style>
-	section {
-		background-color: #0b1426;
-	}
-</style>

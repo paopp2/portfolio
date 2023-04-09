@@ -1,7 +1,7 @@
 <script>
 	import HeroSection from './HeroSection.svelte';
 	import PortfolioSection from './PortfolioSection.svelte';
-	// import AboutSection from './AboutSection.svelte';
+	import AboutSection from './AboutSection.svelte';
 	// import ContactSection from './ContactSection.svelte';
 </script>
 
@@ -13,10 +13,10 @@
 <div>
 	<HeroSection />
 	<PortfolioSection />
-	<!-- <div class="pt-32" /> -->
-	<!-- <AboutSection />
 	<div class="pt-32" />
-	<ContactSection /> -->
+	<AboutSection />
+	<!-- <div class="pt-32" /> -->
+	<!-- <ContactSection /> -->
 </div>
 
 <style lang="postcss">

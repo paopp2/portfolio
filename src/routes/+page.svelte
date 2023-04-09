@@ -1,6 +1,7 @@
 <script>
 	import HeroSection from './HeroSection.svelte';
 	import PortfolioSection from './PortfolioSection.svelte';
+	import AboutSection from './AboutSection.svelte';
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,6 +12,7 @@
 <div>
 	<HeroSection />
 	<PortfolioSection />
+	<AboutSection />
 </div>
 
 <style lang="postcss">

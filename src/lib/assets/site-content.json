@@ -5,7 +5,25 @@
         "bottomText": " I am a full-stack software engineer with the passion and skills for creating beautiful and seamless user \nexperiences may it be for mobile, web or desktop. Hit me up and let's build something great together!",
         "primaryButtonTxt": "Learn more"
     },
-    "portfolio": {},
+    "portfolio": {
+        "projects": [
+            {
+                "name": "Kasado",
+                "description": "Some text about Kasado. Some text about Kasado.Some text about Kasado. Some text about Kasado. Some text about Kasado. Kasado. Some text about Kasado. Some text about Kasado.",
+                "imageSrc": "https://cdn.dribbble.com/users/4001713/screenshots/14872385/media/7dd9babdcdfe199b97a060991f4c1a08.png?compress=1&resize=400x300&vertical=top"
+            },
+            {
+                "name": "Kapiot",
+                "description": "Some text about Kapiot. Some text about Kapiot.Some text about Kapiot. Some text about Kapiot. Some text about Kapiot. Kapiot. Some text about Kapiot. Some text about Kapiot.",
+                "imageSrc": "https://cdn.dribbble.com/users/4001713/screenshots/14872385/media/7dd9babdcdfe199b97a060991f4c1a08.png?compress=1&resize=400x300&vertical=top"
+            },
+            {
+                "name": "Marnikko",
+                "description": "Some text about Marnikko. Some text about Marnikko.Some text about Marnikko. Some text about Marnikko. Some text about Marnikko. Marnikko. Some text about Marnikko. Some text about Marnikko.",
+                "imageSrc": "https://cdn.dribbble.com/users/4001713/screenshots/14872385/media/7dd9babdcdfe199b97a060991f4c1a08.png?compress=1&resize=400x300&vertical=top"
+            }
+        ]
+    },
     "about": {},
     "contact": {}
 }

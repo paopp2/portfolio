@@ -4,6 +4,9 @@
 	import { cubicOut } from 'svelte/easing';
 	import lottie from 'lottie-web';
 	import arrowDownLottieData from '$lib/assets/arrow-down-lottie.json';
+	import siteContent from '$lib/assets/site-content.json';
+
+	const { name, middleText, bottomText, primaryButtonTxt } = siteContent.hero;
 
 	let arrowDownLottieContainer: HTMLElement;
 	onMount(async () => {
@@ -43,19 +46,17 @@
 		class="flex h-screen items-center pl-[290px] pr-[310px] font-bold text-white">
 		<div>
 			<div style="padding-left: {$padding0}px; opacity: {$alpha0}">
-				<h1 class="text-[110px] text-[#ced6f5]">Paolo Pepito</h1>
+				<h1 class="text-[110px] text-[#ced6f5]">{name}</h1>
 			</div>
 			<div style="padding-left: {$padding1}px; opacity: {$alpha1}">
 				<h2 class="pb-8 text-[50px] font-normal text-[#8a92af]">
-					I build mobile, web and desktop apps
+					{middleText}
 				</h2>
 			</div>
 			<div style="padding-left: {$padding2}px; opacity: {$alpha2}">
-				<p class="pb-14 text-[18.5px] font-normal text-[#737c97]">
-					I am a full-stack software engineer with the passion and skills for
-					creating beautiful and seamless user <br />
-					experiences may it be for mobile, web or desktop. Hit me up and let's build
-					something great together!
+				<p
+					class="pb-14 text-[18.5px] font-normal text-[#737c97] whitespace-pre">
+					{bottomText}
 				</p>
 			</div>
 			<div style="padding-left: {$padding3}px; opacity: {$alpha3}">
@@ -64,7 +65,7 @@
 						type="button"
 						class="mr-2 mb-2 h-[4.5rem] rounded-2xl bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 px-4 py-3 text-center hover:bg-gradient-to-br focus:outline-none flex items-center justify-center">
 						<span class="pl-4 text-xl font-extrabold text-white "
-							>Learn more</span>
+							>{primaryButtonTxt}</span>
 						<div bind:this={arrowDownLottieContainer} class="h-14 w-14" />
 					</button>
 				</a>

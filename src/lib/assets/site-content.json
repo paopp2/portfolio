@@ -1,0 +1,11 @@
+{
+    "hero": {
+        "name": "Paolo Pepito",
+        "middleText": "I build mobile, web and desktop apps",
+        "bottomText": " I am a full-stack software engineer with the passion and skills for creating beautiful and seamless user \nexperiences may it be for mobile, web or desktop. Hit me up and let's build something great together!",
+        "primaryButtonTxt": "Learn more"
+    },
+    "portfolio": {},
+    "about": {},
+    "contact": {}
+}

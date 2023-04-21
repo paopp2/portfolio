@@ -25,5 +25,12 @@
         ]
     },
     "about": {},
-    "contact": {}
+    "contact": {
+        "email": "npaolopepito@gmail.com",
+        "phoneNumber": "09684153290",
+        "facebook": "https://www.facebook.com/Nicolas.Paolo.Pepito",
+        "linkedIn": "https://www.linkedin.com/in/npaolopepito/",
+        "instagram": "https://www.instagram.com/nicolaspaolopepito/",
+        "github": "https://github.com/paopp2"
+    }
 }

@@ -24,7 +24,50 @@
             }
         ]
     },
-    "about": {},
+    "about": {
+        "greeting": "Hey there, I'm Paolo!",
+        "description": " I'm a software engineer with experience in building all kinds of apps - may it be for the web, mobile, or desktop. I take pride in being attentive to the smallest detail and in creating software that is clean, elegant and performant. My peers count on me to come up with creative solutions, and I'm not afraid to think outside the box. Given my passion for learning and drive to continually improve my skills, I believe I could be a valuable asset and help contribute in your organization's success",
+        "skills": {
+            "web": [
+                "NodeJS",
+                "Angular",
+                "Svelte",
+                "Tailwind",
+                "Bootstrap",
+                "Material UI",
+                "Cypress",
+                "Flutter"
+            ],
+            "mobile": [
+                "Android",
+                "Kotlin/Java",
+                "Jetpack Compose",
+                "Google Play Console",
+                "Flutter",
+                "Firebase"
+            ],
+            "toolsAndLanguages": [
+                "Git",
+                "Terminal",
+                "JS/TS",
+                "Kotlin",
+                "Dart",
+                "Python",
+                "C/C++",
+                "Java"
+            ],
+            "cloudAndBackend": [
+                "Google Cloud Console",
+                "AWS (EC2, Lambda)",
+                "Mixpanel",
+                "Firebase",
+                "MongoDB",
+                "NodeJS",
+                "MySQL",
+                "Docker"
+            ]
+        }
+    },
     "contact": {
         "email": "npaolopepito@gmail.com",
         "phoneNumber": "09684153290",

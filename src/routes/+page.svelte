@@ -24,6 +24,7 @@
 		scroll-behavior: smooth;
 		font-family: 'Roboto', sans-serif;
 		background-color: #0b1426;
+		color: #7d8092;
 
 		/* Shared style variables */
 		--text-color: #ced6f5;

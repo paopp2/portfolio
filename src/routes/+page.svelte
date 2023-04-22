@@ -2,7 +2,7 @@
 	import HeroSection from './HeroSection.svelte';
 	import PortfolioSection from './PortfolioSection.svelte';
 	import AboutSection from './AboutSection.svelte';
-	// import ContactSection from './ContactSection.svelte';
+	import ContactSection from './ContactSection.svelte';
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,11 +12,11 @@
 	rel="stylesheet" />
 <div>
 	<HeroSection />
+	<AboutSection />
+	<div class="pt-32" />
 	<PortfolioSection />
 	<div class="pt-32" />
-	<AboutSection />
-	<!-- <div class="pt-32" /> -->
-	<!-- <ContactSection /> -->
+	<ContactSection />
 </div>
 
 <style lang="postcss">

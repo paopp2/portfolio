@@ -34,7 +34,7 @@
 	}
 
 	.text-half > p {
-		@apply mb-4 text-neutral-600;
+		@apply mb-4 text-[#7d8092];
 	}
 
 	.img-half {

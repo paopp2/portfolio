@@ -5,25 +5,44 @@
 	import { onMount } from 'svelte';
 	import resumeLink from '$lib/assets/resume.pdf';
 
+	const idToSecNameMap: { [target: string]: string } = {
+		'hero-section': 'Home',
+		'about-section': 'About',
+		'portfolio-section': 'Portfolio',
+		'contact-section': 'Contact'
+	};
+	const sectionIds: string[] = Object.keys(idToSecNameMap);
+	let currentSecId: string = sectionIds[0];
+	let stagedSecId: string = sectionIds[0];
+
 	onMount(async () => {
 		if (browser) {
 			const header = document.querySelector('#nav-bar');
 			const headroom = new Headroom(header!);
 			headroom.init();
 		}
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					// Stage the intersecting section
+					stagedSecId = entry.target.id;
+				} else {
+					// Wait to completely leave previous section
+					// before setting the staged section as current
+					if (entry.target.id !== stagedSecId) {
+						currentSecId = stagedSecId;
+					}
+				}
+			});
+		});
+
+		const elements = document.querySelectorAll('section');
+		elements.forEach((el) => observer.observe(el));
 	});
 
-	const navBarLinkTargetMap: { [navLink: string]: string } = {
-		Home: '#hero-section',
-		About: '#about-section',
-		Portfolio: '#portfolio-section',
-		Contact: '#contact-section'
-	};
-	const navBarLinks = Object.keys(navBarLinkTargetMap);
-	let currentNavLink = navBarLinks[0];
-
-	$: getNavBarLinkClass = (navLink: string) => {
-		return currentNavLink === navLink
+	$: getNavBarLinkClass = (secId: string) => {
+		return currentSecId === secId
 			? 'block py-2 pl-3 pr-4 text-white bg-blue-500 rounded md:bg-transparent md:text-blue-500 md:p-0 dark:text-white text-lg'
 			: 'block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-lg';
 	};
@@ -58,13 +77,12 @@
 		</button>
 		<div class="hidden w-full md:block md:w-auto" id="navbar-default">
 			<ul class="flex flex-row space-x-8 items-center">
-				{#each navBarLinks as navLink}
+				{#each sectionIds as secId}
 					<li>
 						<a
-							href={navBarLinkTargetMap[navLink]}
-							class={getNavBarLinkClass(navLink)}
-							on:click={() => (currentNavLink = navLink)}
-							aria-current="page">{navLink}</a>
+							href={'#' + secId}
+							class={getNavBarLinkClass(secId)}
+							aria-current="page">{idToSecNameMap[secId]}</a>
 					</li>
 				{/each}
 				<a href={resumeLink} target="_blank" rel="noreferrer">

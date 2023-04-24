@@ -41,7 +41,7 @@
 	}
 </script>
 
-<section>
+<section id="hero-section">
 	<div
 		class="flex h-screen items-center pl-[290px] pr-[310px] font-bold text-white">
 		<div>

@@ -3,6 +3,7 @@
 	import Headroom from 'headroom.js';
 	import { browser } from '$app/environment';
 	import { onMount } from 'svelte';
+	import resumeLink from '$lib/assets/resume.pdf';
 
 	onMount(async () => {
 		if (browser) {
@@ -12,7 +13,13 @@
 		}
 	});
 
-	let navBarLinks: string[] = ['Home', 'About', 'Portfolio', 'Contact'];
+	const navBarLinkTargetMap: { [navLink: string]: string } = {
+		Home: '#hero-section',
+		About: '#about-section',
+		Portfolio: '#portfolio-section',
+		Contact: '#contact-section'
+	};
+	const navBarLinks = Object.keys(navBarLinkTargetMap);
 	let currentNavLink = navBarLinks[0];
 
 	$: getNavBarLinkClass = (navLink: string) => {
@@ -54,16 +61,18 @@
 				{#each navBarLinks as navLink}
 					<li>
 						<a
-							href="#portfolio-section"
+							href={navBarLinkTargetMap[navLink]}
 							class={getNavBarLinkClass(navLink)}
 							on:click={() => (currentNavLink = navLink)}
 							aria-current="page">{navLink}</a>
 					</li>
 				{/each}
-				<button
-					type="button"
-					class="text-blue-500 hover:text-white hover:font-bold border border-blue-500 hover:bg-blue-500 rounded-lg text-lg px-5 py-2 text-center"
-					>Resume</button>
+				<a href={resumeLink} target="_blank" rel="noreferrer">
+					<button
+						type="button"
+						class="text-blue-500 hover:text-white hover:font-bold border border-blue-500 hover:bg-blue-500 rounded-lg text-lg px-5 py-2 text-center"
+						>Resume</button>
+				</a>
 			</ul>
 		</div>
 	</div>

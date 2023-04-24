@@ -32,8 +32,8 @@
 <nav id="nav-bar" class="headroom bg-[#0b1426]/90 backdrop-blur-md">
 	<div
 		class="h-24 container mx-auto flex flex-wrap items-center justify-between">
-		<a href="https://flowbite.com/" class="flex items-center">
-			<img src={logo} class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+		<a href="/" class="flex items-center">
+			<img src={logo} class="mr-3 h-6 sm:h-9" alt="My logo" />
 			<span
 				class="self-center whitespace-nowrap text-xl font-semibold dark:text-white"
 				>Paolo Pepito</span>

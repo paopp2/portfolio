@@ -12,7 +12,8 @@
 <section id="portfolio-section" class="min-h-screen">
 	<SectionHeader sectionTitle={'Some of my work'} />
 
-	<div class="flex flex-col items-center justify-center">
+	<div
+		class="container mx-auto px-[200px] flex flex-col items-center justify-center">
 		{#each myProjects as project}
 			<ProjectBlock {...project} />
 		{/each}

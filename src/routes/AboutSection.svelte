@@ -19,8 +19,8 @@
 <section id="about-section" class="min-h-screen">
 	<SectionHeader sectionTitle={'About me'} />
 
-	<div class="flex h-fit justify-center">
-		<div class="bg-[#111f3b] w-8/12 rounded-[35px] shadow-2xl">
+	<div class="container mx-auto px-[200px] flex h-fit justify-center">
+		<div class="bg-[#111f3b] rounded-[35px] shadow-2xl">
 			<div class="flex p-8">
 				<div
 					class="w-3/5 flex flex-col items-center justify-center text-justify text-[#7d8092] p-8">
@@ -44,7 +44,7 @@
 							<img src={webIcon} alt="" />
 						</div>
 					</div>
-					<h1 class="pb-10 text-2xl text-[#ced6f5] font-medium">Web</h1>
+					<h1 class="pb-10 text-xl text-[#ced6f5] font-medium">Web</h1>
 					{#each webSkills as skill}
 						<p class="py-2">{skill}</p>
 					{/each}
@@ -56,7 +56,7 @@
 							<img src={mobileIcon} alt="" />
 						</div>
 					</div>
-					<h1 class="pb-10 text-2xl text-[#ced6f5] font-medium">Mobile</h1>
+					<h1 class="pb-10 text-xl text-[#ced6f5] font-medium">Mobile</h1>
 					{#each mobileSkills as skill}
 						<p class="py-2">{skill}</p>
 					{/each}
@@ -68,7 +68,7 @@
 							<img src={serverIcon} alt="" />
 						</div>
 					</div>
-					<h1 class="pb-10 text-2xl text-[#ced6f5] font-medium">
+					<h1 class="pb-10 text-xl text-[#ced6f5] font-medium">
 						Backend/Cloud
 					</h1>
 					{#each cloudAndBackend as cloudAndBackendTool}
@@ -82,7 +82,7 @@
 							<img src={terminalIcon} alt="" />
 						</div>
 					</div>
-					<h1 class="pb-10 text-2xl text-[#ced6f5] font-medium">
+					<h1 class="pb-10 text-xl text-[#ced6f5] font-medium">
 						Tools/Languages
 					</h1>
 					{#each toolsAndLangs as toolOrLang}

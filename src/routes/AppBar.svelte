@@ -22,9 +22,9 @@
 	};
 </script>
 
-<nav id="nav-bar" class="headroom">
+<nav id="nav-bar" class="headroom bg-[#0b1426]/90 backdrop-blur-md">
 	<div
-		class="h-28 container mx-auto flex flex-wrap items-center justify-between">
+		class="h-24 container mx-auto flex flex-wrap items-center justify-between">
 		<a href="https://flowbite.com/" class="flex items-center">
 			<img src={logo} class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
 			<span

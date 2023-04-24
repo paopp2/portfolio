@@ -42,8 +42,7 @@
 </script>
 
 <section id="hero-section">
-	<div
-		class="container mx-auto flex flex-col h-screen justify-center pl-[180px] pr-[200px] font-bold text-white">
+	<div class="flex flex-col h-screen justify-center font-bold text-white">
 		<div style="padding-left: {$padding0}px; opacity: {$alpha0}">
 			<h1 class="text-[110px] text-[#ced6f5]">{name}</h1>
 		</div>

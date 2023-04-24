@@ -14,8 +14,8 @@
 
 <section
 	id="contact-section"
-	class="min-h-screen flex flex-col items-center justify-center">
-	<div class="w-1/3 text-center">
+	class="min-h-screen flex flex-col items-center justify-center px-48">
+	<div class="text-center">
 		<h1 class="text-6xl font-bold pb-8">{header}</h1>
 		<p class="text-xl text-[#737c97] pb-8">{subText}</p>
 

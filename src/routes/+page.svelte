@@ -15,7 +15,7 @@
 <header class="fixed top-0 left-0 right-0 z-50">
 	<AppBar />
 </header>
-<main>
+<main class="container mx-auto px-[200px]">
 	<HeroSection />
 	<div class="pt-8" />
 	<AboutSection />

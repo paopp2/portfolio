@@ -1,5 +1,5 @@
 <script lang="ts">
-	import logo from '$lib/assets/logo.svg';
+	import logo from '$lib/assets/logo.png';
 	import Headroom from 'headroom.js';
 	import { browser } from '$app/environment';
 	import { onMount } from 'svelte';
@@ -33,9 +33,9 @@
 	<div
 		class="h-24 container mx-auto flex flex-wrap items-center justify-between">
 		<a href="/" class="flex items-center">
-			<img src={logo} class="mr-3 h-6 sm:h-9" alt="My logo" />
+			<img src={logo} class="mr-3 h-6 sm:h-12" alt="My logo" />
 			<span
-				class="self-center whitespace-nowrap text-xl font-semibold dark:text-white"
+				class="self-center whitespace-nowrap text-2xl font-semibold dark:text-white"
 				>Paolo Pepito</span>
 		</a>
 		<button

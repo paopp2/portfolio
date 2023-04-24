@@ -107,4 +107,7 @@
 	.headroom--unpinned {
 		transform: translateY(-100%);
 	}
+	.headroom--not-top {
+		@apply shadow-2xl;
+	}
 </style>

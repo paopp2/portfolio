@@ -5,7 +5,8 @@
 	export let textFirst: boolean = true;
 </script>
 
-<div class="flex rounded-[35px] bg-[#111f3b] shadow-2xl justify-center mb-20">
+<div
+	class="flex rounded-[35px] bg-[#111f3b] shadow-2xl justify-center mb-20 hover:scale-[1.03] transition">
 	{#if textFirst}
 		<div class="text-half">
 			<h1>{name}</h1>

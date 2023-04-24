@@ -46,7 +46,7 @@
 					</div>
 					<h1 class="pb-10 text-2xl text-[#ced6f5] font-medium">Web</h1>
 					{#each webSkills as skill}
-						<p class="py-1">{skill}</p>
+						<p class="py-2">{skill}</p>
 					{/each}
 				</div>
 				<div class="w-1/4 flex flex-col items-center">
@@ -58,7 +58,7 @@
 					</div>
 					<h1 class="pb-10 text-2xl text-[#ced6f5] font-medium">Mobile</h1>
 					{#each mobileSkills as skill}
-						<p class="py-1">{skill}</p>
+						<p class="py-2">{skill}</p>
 					{/each}
 				</div>
 				<div class="w-1/4 flex flex-col items-center">
@@ -72,7 +72,7 @@
 						Backend/Cloud
 					</h1>
 					{#each cloudAndBackend as cloudAndBackendTool}
-						<p class="py-1">{cloudAndBackendTool}</p>
+						<p class="py-2">{cloudAndBackendTool}</p>
 					{/each}
 				</div>
 				<div class="w-1/4 flex flex-col items-center">
@@ -86,7 +86,7 @@
 						Tools/Languages
 					</h1>
 					{#each toolsAndLangs as toolOrLang}
-						<p class="py-1">{toolOrLang}</p>
+						<p class="py-2">{toolOrLang}</p>
 					{/each}
 				</div>
 			</div>

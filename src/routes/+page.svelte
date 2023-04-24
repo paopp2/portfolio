@@ -3,6 +3,7 @@
 	import PortfolioSection from './PortfolioSection.svelte';
 	import AboutSection from './AboutSection.svelte';
 	import ContactSection from './ContactSection.svelte';
+	import AppBar from './AppBar.svelte';
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -10,14 +11,17 @@
 <link
 	href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
 	rel="stylesheet" />
-<div>
+
+<header class="fixed top-0 left-0 right-0 z-50">
+	<AppBar />
+</header>
+<main class="absolute top-0 z-10">
 	<HeroSection />
 	<AboutSection />
 	<div class="pt-32" />
 	<PortfolioSection />
-	<div class="pt-32" />
 	<ContactSection />
-</div>
+</main>
 
 <style lang="postcss">
 	:global(html) {
@@ -28,5 +32,6 @@
 
 		/* Shared style variables */
 		--text-color: #ced6f5;
+		--accent: #7de1c5;
 	}
 </style>

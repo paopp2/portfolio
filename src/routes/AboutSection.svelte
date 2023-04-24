@@ -1,6 +1,7 @@
 <script>
 	import SectionHeader from '$lib/components/SectionHeader.svelte';
 	import siteContent from '$lib/assets/site-content.json';
+	import selfImg from '$lib/assets/self-portrait.jpg';
 	import webIcon from '$lib/assets/icons/web.svg';
 	import mobileIcon from '$lib/assets/icons/mobile.svg';
 	import serverIcon from '$lib/assets/icons/server.svg';
@@ -30,7 +31,7 @@
 				<div class="w-2/5 flex items-center justify-center">
 					<img
 						class="h-4/5 rounded-full object-cover aspect-square"
-						src="https://static.vecteezy.com/system/resources/previews/002/002/403/original/man-with-beard-avatar-character-isolated-icon-free-vector.jpg"
+						src={selfImg}
 						alt="Rounded avatar" />
 				</div>
 			</div>

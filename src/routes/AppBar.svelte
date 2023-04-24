@@ -1,21 +1,32 @@
 <script lang="ts">
-	let navBarLinks: string[] = ['Home', 'Portfolio', 'About', 'Contact'];
+	import logo from '$lib/assets/logo.svg';
+	import Headroom from 'headroom.js';
+	import { browser } from '$app/environment';
+	import { onMount } from 'svelte';
+
+	onMount(async () => {
+		if (browser) {
+			const header = document.querySelector('#nav-bar');
+			const headroom = new Headroom(header!);
+			headroom.init();
+		}
+	});
+
+	let navBarLinks: string[] = ['Home', 'About', 'Portfolio', 'Contact'];
 	let currentNavLink = navBarLinks[0];
 
 	$: getNavBarLinkClass = (navLink: string) => {
 		return currentNavLink === navLink
-			? 'block py-2 pl-3 pr-4 text-white bg-[#7de1c5] rounded md:bg-transparent md:text-[#7de1c5] md:p-0 dark:text-white'
-			: 'block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent';
+			? 'block py-2 pl-3 pr-4 text-white bg-blue-500 rounded md:bg-transparent md:text-blue-500 md:p-0 dark:text-white text-lg'
+			: 'block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-lg';
 	};
 </script>
 
-<nav class="py-9">
-	<div class="container mx-auto flex flex-wrap items-center justify-between">
+<nav id="nav-bar" class="headroom">
+	<div
+		class="h-28 container mx-auto flex flex-wrap items-center justify-between">
 		<a href="https://flowbite.com/" class="flex items-center">
-			<img
-				src="https://flowbite.com/docs/images/logo.svg"
-				class="mr-3 h-6 sm:h-9"
-				alt="Flowbite Logo" />
+			<img src={logo} class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
 			<span
 				class="self-center whitespace-nowrap text-xl font-semibold dark:text-white"
 				>Paolo Pepito</span>
@@ -39,18 +50,34 @@
 					clip-rule="evenodd" /></svg>
 		</button>
 		<div class="hidden w-full md:block md:w-auto" id="navbar-default">
-			<ul class="flex flex-row space-x-8">
+			<ul class="flex flex-row space-x-8 items-center">
 				{#each navBarLinks as navLink}
 					<li>
 						<a
-							href="#trial"
+							href="#portfolio-section"
 							class={getNavBarLinkClass(navLink)}
 							on:click={() => (currentNavLink = navLink)}
 							aria-current="page">{navLink}</a>
 					</li>
-					""
 				{/each}
+				<button
+					type="button"
+					class="text-blue-500 hover:text-white hover:font-bold border border-blue-500 hover:bg-blue-500 rounded-lg text-lg px-5 py-2 text-center"
+					>Resume</button>
 			</ul>
 		</div>
 	</div>
 </nav>
+
+<style>
+	.headroom {
+		will-change: transform;
+		transition: transform 200ms linear;
+	}
+	.headroom--pinned {
+		transform: translateY(0%);
+	}
+	.headroom--unpinned {
+		transform: translateY(-100%);
+	}
+</style>

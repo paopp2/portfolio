@@ -19,7 +19,7 @@
 <section id="about-section" class="min-h-screen">
 	<SectionHeader sectionTitle={'About me'} />
 
-	<div class="flex h-fit justify-center">
+	<div class="flex h-fit justify-center hover:scale-[1.03] transition">
 		<div class="bg-[#111f3b] rounded-[35px] shadow-2xl">
 			<div class="flex p-8">
 				<div

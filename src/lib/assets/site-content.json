@@ -9,15 +9,15 @@
         "projects": [
             {
                 "name": "Kasado",
-                "description": "Some text about Kasado. Some text about Kasado.Some text about Kasado. Some text about Kasado. Some text about Kasado. Kasado. Some text about Kasado. Some text about Kasado."
+                "description": "App catered to the basketball community, allowing members to choose a court and book a time of their choosing and play ball with other Kasado users booked at that slot. Individual player statistics are also recorded and shown at each player's profiles. At the project's peak, had organically grown to more than 100 users."
             },
             {
                 "name": "Kapiot",
-                "description": "Some text about Kapiot. Some text about Kapiot.Some text about Kapiot. Some text about Kapiot. Some text about Kapiot. Kapiot. Some text about Kapiot. Some text about Kapiot."
+                "description": "App that provides a carpooled ride-sharing system for university students. Similar to the concept of Wunder Carpool but exclusive to university students only."
             },
             {
                 "name": "Marnikko",
-                "description": "Some text about Marnikko. Some text about Marnikko.Some text about Marnikko. Some text about Marnikko. Some text about Marnikko. Marnikko. Some text about Marnikko. Some text about Marnikko."
+                "description": "A desktop app for inventory management and sales analysis. Built from the ground up with the UI designed in Flutter and the backend implemented in NodeJS with MongoDB to store data."
             }
         ]
     },

@@ -14,24 +14,26 @@
 	};
 </script>
 
-<div
-	class="flex rounded-[35px] bg-[#111f3b] shadow-2xl justify-center mb-20 hover:scale-[1.03] transition">
-	{#if textFirst}
-		<div class="text-half">
-			<h1>{name}</h1>
-			<p>{description}</p>
-		</div>
+<a href={projectSSMap[name]} target="_blank" rel="noreferrer">
+	<div
+		class="flex rounded-[35px] bg-[#111f3b] shadow-2xl justify-center mb-20 hover:scale-[1.03] transition">
+		{#if textFirst}
+			<div class="text-half">
+				<h1>{name}</h1>
+				<p>{description}</p>
+			</div>
 
-		<img class="img-half" src={projectSSMap[name]} alt="random_alt" />
-	{:else}
-		<img class="img-half" src={projectSSMap[name]} alt="random_alt" />
+			<img class="img-half" src={projectSSMap[name]} alt="random_alt" />
+		{:else}
+			<img class="img-half" src={projectSSMap[name]} alt="random_alt" />
 
-		<div class="text-half">
-			<h1>{name}</h1>
-			<p>{description}</p>
-		</div>
-	{/if}
-</div>
+			<div class="text-half">
+				<h1>{name}</h1>
+				<p>{description}</p>
+			</div>
+		{/if}
+	</div>
+</a>
 
 <style>
 	.text-half {

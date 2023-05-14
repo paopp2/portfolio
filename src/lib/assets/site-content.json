@@ -9,18 +9,15 @@
         "projects": [
             {
                 "name": "Kasado",
-                "description": "Some text about Kasado. Some text about Kasado.Some text about Kasado. Some text about Kasado. Some text about Kasado. Kasado. Some text about Kasado. Some text about Kasado.",
-                "imageSrc": "https://cdn.dribbble.com/users/4001713/screenshots/14872385/media/7dd9babdcdfe199b97a060991f4c1a08.png?compress=1&resize=400x300&vertical=top"
+                "description": "Some text about Kasado. Some text about Kasado.Some text about Kasado. Some text about Kasado. Some text about Kasado. Kasado. Some text about Kasado. Some text about Kasado."
             },
             {
                 "name": "Kapiot",
-                "description": "Some text about Kapiot. Some text about Kapiot.Some text about Kapiot. Some text about Kapiot. Some text about Kapiot. Kapiot. Some text about Kapiot. Some text about Kapiot.",
-                "imageSrc": "https://cdn.dribbble.com/users/4001713/screenshots/14872385/media/7dd9babdcdfe199b97a060991f4c1a08.png?compress=1&resize=400x300&vertical=top"
+                "description": "Some text about Kapiot. Some text about Kapiot.Some text about Kapiot. Some text about Kapiot. Some text about Kapiot. Kapiot. Some text about Kapiot. Some text about Kapiot."
             },
             {
                 "name": "Marnikko",
-                "description": "Some text about Marnikko. Some text about Marnikko.Some text about Marnikko. Some text about Marnikko. Some text about Marnikko. Marnikko. Some text about Marnikko. Some text about Marnikko.",
-                "imageSrc": "https://cdn.dribbble.com/users/4001713/screenshots/14872385/media/7dd9babdcdfe199b97a060991f4c1a08.png?compress=1&resize=400x300&vertical=top"
+                "description": "Some text about Marnikko. Some text about Marnikko.Some text about Marnikko. Some text about Marnikko. Some text about Marnikko. Marnikko. Some text about Marnikko. Some text about Marnikko."
             }
         ]
     },

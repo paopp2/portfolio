@@ -1,7 +1,7 @@
 <script>
 	import SectionHeader from '$lib/components/SectionHeader.svelte';
 	import siteContent from '$lib/assets/site-content.json';
-	import selfImg from '$lib/assets/self-portrait.jpg';
+	import selfImg from '$lib/assets/self-portrait.png';
 	import webIcon from '$lib/assets/icons/web.svg';
 	import mobileIcon from '$lib/assets/icons/mobile.svg';
 	import serverIcon from '$lib/assets/icons/server.svg';
@@ -30,7 +30,7 @@
 				</div>
 				<div class="w-2/5 flex items-center justify-center">
 					<img
-						class="h-4/5 rounded-full object-cover aspect-square"
+						class="h-3/5 rounded-full object-cover aspect-square"
 						src={selfImg}
 						alt="Rounded avatar" />
 				</div>

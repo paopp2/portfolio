@@ -1,5 +1,6 @@
 <script lang="ts">
 	import siteContent from '$lib/assets/site-content.json';
+	import mixpanel from 'mixpanel-browser';
 
 	const contactContent = siteContent.contact;
 	const header = contactContent.header;
@@ -10,6 +11,10 @@
 	const igLink = contactContent.instagram;
 	const linkedInLink = contactContent.linkedIn;
 	const githubLink = contactContent.github;
+
+	function openedContactLink(contactType: string) {
+		mixpanel.track('Opened contact link', { contactType });
+	}
 </script>
 
 <section
@@ -23,6 +28,7 @@
 			<a href={fbLink} target="_blank" rel="noreferrer">
 				<button
 					type="button"
+					on:click={() => openedContactLink('Facebook')}
 					class="rounded-full border border-blue-700 text-center p-3 text-[#0b1426] hover:bg-blue-700 hover:text-[#ced6f5]">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -42,6 +48,7 @@
 			</a>
 			<a href={igLink} target="_blank" rel="noreferrer">
 				<button
+					on:click={() => openedContactLink('Instagram')}
 					type="button"
 					class="rounded-full border border-blue-700 text-center p-3 text-[#0b1426] hover:bg-blue-700 hover:text-[#ced6f5]">
 					<svg
@@ -67,6 +74,7 @@
 			</a>
 			<a href={linkedInLink} target="_blank" rel="noreferrer">
 				<button
+					on:click={() => openedContactLink('LinkedIn')}
 					type="button"
 					class="rounded-full border border-blue-700 text-center p-3 text-[#0b1426] hover:bg-blue-700 hover:text-[#ced6f5]">
 					<svg
@@ -92,6 +100,7 @@
 			</a>
 			<a href={githubLink} target="_blank" rel="noreferrer">
 				<button
+					on:click={() => openedContactLink('Github')}
 					type="button"
 					class="rounded-full border border-blue-700 text-center p-3 text-[#0b1426] hover:bg-blue-700 hover:text-[#ced6f5]">
 					<svg
@@ -117,6 +126,7 @@
 				target="_blank"
 				rel="noreferrer">
 				<button
+					on:click={() => openedContactLink('Email')}
 					type="button"
 					class="rounded-full border border-blue-700 text-center p-3 text-[#0b1426] hover:bg-blue-700 hover:text-[#ced6f5]">
 					<svg

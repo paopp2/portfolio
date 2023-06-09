@@ -3,6 +3,7 @@
 	import Headroom from 'headroom.js';
 	import { browser } from '$app/environment';
 	import { onMount } from 'svelte';
+	import mixpanel from 'mixpanel-browser';
 	import resumeLink from '$lib/assets/resume.pdf';
 
 	const idToSecNameMap: { [target: string]: string } = {
@@ -16,6 +17,9 @@
 	let stagedSecId: string = sectionIds[0];
 
 	onMount(async () => {
+		mixpanel.init('7ccb08fcc07a7d7c1aa6d5d86e7acab6', { debug: true });
+		mixpanel.track('Opened website');
+
 		if (browser) {
 			const header = document.querySelector('#nav-bar');
 			const headroom = new Headroom(header!);
@@ -32,6 +36,9 @@
 					// before setting the staged section as current
 					if (entry.target.id !== stagedSecId) {
 						currentSecId = stagedSecId;
+						mixpanel.track('Navigated site', {
+							section: idToSecNameMap[currentSecId]
+						});
 					}
 				}
 			});

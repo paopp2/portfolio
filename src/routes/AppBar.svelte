@@ -17,7 +17,7 @@
 	let stagedSecId: string = sectionIds[0];
 
 	onMount(async () => {
-		mixpanel.init('7ccb08fcc07a7d7c1aa6d5d86e7acab6', { debug: true });
+		mixpanel.init('7ccb08fcc07a7d7c1aa6d5d86e7acab6');
 		mixpanel.track('Opened website');
 
 		if (browser) {

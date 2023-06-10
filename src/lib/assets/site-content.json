@@ -26,21 +26,22 @@
         "description": " I'm a software engineer with experience in building all kinds of apps - may it be for the web, mobile, or desktop. I take pride in being attentive to the smallest detail and in creating software that is clean, elegant and performant. My peers count on me to come up with creative solutions, and I'm not afraid to think outside the box. Given my passion for learning and drive to continually improve my skills, I believe I could be a valuable asset and help contribute in your organization's success",
         "skills": {
             "web": [
-                "NodeJS",
                 "Angular",
                 "Svelte",
+                "Ionic/Capacitor",
                 "Tailwind",
                 "Bootstrap",
                 "Material UI",
                 "Cypress",
-                "Flutter"
+                "NodeJS"
             ],
             "mobile": [
-                "Android",
-                "Kotlin/Java",
-                "Jetpack Compose",
-                "Google Play Console",
                 "Flutter",
+                "Android",
+                "Jetpack Compose",
+                "Kotlin",
+                "Java",
+                "Google Play Console",
                 "Firebase"
             ],
             "toolsAndLanguages": [

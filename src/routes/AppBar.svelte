@@ -53,6 +53,10 @@
 			? 'block py-2 pl-3 pr-4 text-white bg-blue-500 rounded md:bg-transparent md:text-blue-500 md:p-0 dark:text-white text-lg'
 			: 'block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-lg';
 	};
+
+	function openedResume() {
+		mixpanel.track('Opened resume');
+	}
 </script>
 
 <nav id="nav-bar" class="headroom bg-[#0b1426]/90 backdrop-blur-md">
@@ -94,6 +98,7 @@
 				{/each}
 				<a href={resumeLink} target="_blank" rel="noreferrer">
 					<button
+						on:click={openedResume}
 						type="button"
 						class="text-blue-500 hover:text-white hover:font-bold border border-blue-500 hover:bg-blue-500 rounded-lg text-lg px-5 py-2 text-center"
 						>Resume</button>

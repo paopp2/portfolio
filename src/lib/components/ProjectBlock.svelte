@@ -12,9 +12,14 @@
 		Kapiot: kapiotSS,
 		Marnikko: marnikkoSS
 	};
+	const projectGithubLinkMap: { [projectName: string]: string } = {
+		Kasado: "https://github.com/paopp2/kasado",
+		Kapiot: "https://github.com/paopp2/kapiot",
+		Marnikko: marnikkoSS,
+	};
 </script>
 
-<a href={projectSSMap[name]} target="_blank" rel="noreferrer">
+<a href={projectGithubLinkMap[name]} target="_blank" rel="noreferrer">
 	<div
 		class="flex rounded-[35px] bg-[#111f3b] shadow-2xl justify-center mb-20 hover:scale-[1.03] transition">
 		{#if textFirst}
